@@ -3,7 +3,6 @@ import AddFishForm from './AddFishForm';
 
 class Inventory extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <div className="inventory">
         <AddFishForm addFish={this.props.addFish} />
