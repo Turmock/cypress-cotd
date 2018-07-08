@@ -18,10 +18,11 @@ class AddFishForm extends React.Component {
     const fish = {
       name: this.nameRef.value.value,
       price: parseFloat(this.priceRef.value.value),
-      stauts: this.statusRef.value.value,
+      status: this.statusRef.value.value,
       desc: this.descRef.value.value,
       image: this.imageRef.value.value
     }
+    console.table(fish);
     this.props.addFish(fish);
     event.currentTarget.reset();
   }
@@ -31,7 +32,7 @@ class AddFishForm extends React.Component {
       <form className="fish-edit" onSubmit={this.createFish}>
         <input name="name" ref={this.nameRef} type="text" placeholder="Name" />
         <input name="price" ref={this.priceRef} type="text" placeholder="Price" />
-        <select name="status" ref={this.statusRef} type="text">
+        <select name="status" ref={this.statusRef}>
           <option value="available">Fresh!</option>
           <option value="unavailable">Sold out!</option>
         </select>
