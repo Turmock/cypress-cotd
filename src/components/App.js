@@ -24,10 +24,11 @@ class App extends React.Component {
     if ( localStorageRef ) {
       this.setState({order: JSON.parse(localStorageRef)});
     }
-    this.ref = base.syncState(`${params.storeID}/fishes`, {
-      context: this,
-      state: 'fishes'
-    });
+    // OPTIONAL: Uncomment and auth/firebase with Cypress
+    // this.ref = base.syncState(`${params.storeID}/fishes`, {
+    //   context: this,
+    //   state: 'fishes'
+    // });
   };
 
   componentDidUpdate() {
@@ -35,7 +36,8 @@ class App extends React.Component {
   };
 
   componentWillUnmount() {
-    base.removeBinding(this.ref);
+    // OPTIONAL: Uncomment and auth/firebase with Cypress
+    // base.removeBinding(this.ref);
   }
 
   addFish = fish => {
