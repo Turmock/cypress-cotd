@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('CBOT Price Table UI', () => {
   const localUrl = `${Cypress.env('localUrl')}`;
   const webUrl = `${Cypress.env('webUrl')}`;

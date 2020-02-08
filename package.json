@@ -3,9 +3,11 @@
   "version": "0.0.3",
   "private": true,
   "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "^2.1.2",
     "concurrently": "3.5.1",
     "cypress": "^4.0.0",
-    "react-scripts": "^3.3.1"
+    "react-scripts": "^3.3.1",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "autoprefixer-stylus": "0.14.0",
