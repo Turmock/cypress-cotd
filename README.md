@@ -6,7 +6,6 @@ This Cypress project was created as an examples for those curious to play around
 ## Cypress Project
 The purpose of this repo is to offer an easy to test project using Cypress. In the main directory you will find a `Cypress` folder. This contains the Cypress tests and helpers that make it possible.
 
-----
 ## Test Project (Catch of the Day)
 The project Cypress is testing was built by following along the [React For Beginners](https://reactforbeginners.com/) course by Wes Bos. If you're interested in the project that is being tested, I highly encourage you taking this or any of his courses.
 
@@ -14,7 +13,6 @@ The main contents of this project are found in the `src` folder within the main 
 
 I chose to use TypeScript on top of JavaScript to provide typing in these files. This helped me to write the tests and I'm sure it'll help you understand them.
 
-----
 ## Getting Started
 In the local directory where you want to set up this project, clone this repository and change into the directory
 
@@ -37,7 +35,6 @@ You'll **notice** that some tests are failing! This is because some tests are ru
 
 `npm run start`
 
-----
 ## Exploring Tests
 #### create-store.spec.ts
 The first test file of interest is `create-store.spec.ts`. This is where I test both the `webUrl` (https://cypress-cotd.micleners.com/) and the `localUrl` (http://localhost:3000/) as mentioned above. Feel free to explore and mess around with these tests. I chose a few different methods of testing to highlight the power of Cypress commands, dropping into JQuery for element inspection, and dropping into Chai for further assertions.
@@ -47,7 +44,6 @@ The second test file is `order-fish.spec.ts`. To streamline the tests here, I ju
 
 There are a few tests provided in these file, however I left room for you to implement further tests. Have fun exploring!
 
-----
 ## Files in Project
 
 The following is the directory structure of the project. The main folders you will be interested in are `cypress` and `src`:
@@ -95,3 +91,5 @@ Other files include this `README.md`. We also have `cypress.json` where the envi
 - security-rules.json          
 - tsconfig.json                
 
+## Setting Up Auth
+Currently, Auth with Firebase is deactivate with this project. However, you can feel free to uncomment the lines of code around this and get this project setup with auth. Then, try to test your authentication with [this package](https://github.com/lirantal/cypress-social-logins).
