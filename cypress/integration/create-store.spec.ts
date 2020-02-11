@@ -1,6 +1,5 @@
-/// <reference types="Cypress" />
 
-describe('CBOT Price Table UI', () => {
+describe('Home page and creating a store', () => {
   const localUrl = `${Cypress.env('localUrl')}`;
   const webUrl = `${Cypress.env('webUrl')}`;
 
@@ -19,8 +18,8 @@ describe('CBOT Price Table UI', () => {
 
       it('should have a randomly generated value loaded in the input', () => {
         // declare variables to assign later
-        let storeName1;
-        let storeName2;
+        let storeName1: any;
+        let storeName2: any;
 
         // assign value in input to variable by dropping into JQuery on element
         cy.get('.store-selector input').then(
@@ -62,14 +61,14 @@ describe('CBOT Price Table UI', () => {
       });
 
       it('should have a randomly generated value loaded in the input', () => {
-        let storeName1;
-        let storeName2;
+        let storeName1: any;
+        let storeName2: any;
 
         cy.get('.store-selector input').then(
-          input => (storeName1 = input.val())
-        );
+          input => (storeName1 = input.val()
+        ));
 
-        cy.visit(webUrl);
+        cy.visit(localUrl);
         cy.get('.store-selector input').then(input => {
           storeName2 = input.val();
           expect(storeName1).to.not.be.equal(storeName2);
