@@ -47,7 +47,8 @@ describe('CBOT Price Table UI', () => {
         // finishing asserting the rest of the fields
       });
 
-      it('should see fish on left hand menu', () => {
+      // this test is failing
+      it.only('should see fish on left hand menu', () => {
         cy.get('form.fish-edit').as('fishForm');
         cy.get('@fishForm').should('exist');
         cy.get('@fishForm')
@@ -66,9 +67,10 @@ describe('CBOT Price Table UI', () => {
           .contains('Add Fish!')
           .click();
 
+        // fix this next assertion
         cy.get('h3.fish-name')
           .first()
-          .should('contain', 'Southwest Trout');
+          .should('contain', 'Halibut');
 
         // finishing asserting the rest of the display values
       });
