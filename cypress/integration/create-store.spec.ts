@@ -49,7 +49,7 @@ describe('Home page and creating a store', () => {
   });
 
 
-  describe.only('Tests hitting local url', () => {
+  describe('Tests hitting local url', () => {
     describe('Navigate to COTD homepage and create store', () => {
       beforeEach(() => {
         cy.visit(localUrl);
