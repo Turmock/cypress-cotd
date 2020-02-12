@@ -1,7 +1,10 @@
 # Cypress Tests for the Catch of the Day Project
 
 ## Origins of this Project
-This Cypress project was created as an examples for those curious to play around with Cypress but don't want to get a full project setup. I have given [this presentation](https://cypress-retro.micleners.com/) several times on the topic and you can read futher with [this article](https://github.com/micleners/cypress-retro) I have written on the topic.
+This Cypress project was created as an examples for those curious to play around with Cypress but don't want to get a full project setup. I have given a presentation several times on the topic and have a written article on the conent available:
+- [presentation slides](https://cypress-retro.micleners.com/)
+- [article](https://github.com/micleners/cypress-retro)
+
 
 ## Cypress Project
 The purpose of this repo is to offer an easy to test project using Cypress. In the main directory you will find a `Cypress` folder. This contains the Cypress tests and helpers that make it possible.
